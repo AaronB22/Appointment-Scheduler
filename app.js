@@ -20,7 +20,7 @@ app.post('/submit', (req, res)=>{
         time: req.body.time,
         timeStamp: new Date()
     })
-
+    res.sendFile(`${import.meta.dirname}/views/confirmation.html`)
 })
 app.get('/admin', (req,res)=>{
     res.send(appointments)
