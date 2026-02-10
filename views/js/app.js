@@ -1,4 +1,4 @@
-document.getElementById("submit-button").onsubmit = () => {
+document.getElementById("/submit-button").onsubmit = () => {
 
     clearErrors();
 
