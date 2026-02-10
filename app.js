@@ -22,6 +22,9 @@ app.post('/submit', (req, res)=>{
     })
 
 })
+app.get('/admin', (req,res)=>{
+    res.send(appointments)
+})
 
 app.listen(PORT, () => {
     console.log(`Server is running at http://localhost:${PORT}`)
