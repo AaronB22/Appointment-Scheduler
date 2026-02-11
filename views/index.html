@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment</title>
-    <script src="/js/application.js" defer></script>
-    
+    <title>Appointment Scheduler</title>
 </head>
 <body>
-
-     <form id="app-form" action="/submit" method="post"></form>
-     <!-- Contact Info -->
-            <fieldset>
-                <legend>Contact Info</legend>
-                <label for="fname">First Name: 
-                    <span class="err" id="err-fname">
-                        First name is required
-                    </span>
-                </label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">Last Name:
-                    <span class="err" id="err-lname">
-                        Last name is required
-                    </span>
-                </label>
-                <input type="text" id="lname" name="lname">
-            </fieldset>
-            <label for ="date">Date: <input type="date">
-                </span>
-                <label for="time">Time: <input type="time">
-                </span>
-
-                  <!-- Submit button -->
-            <button type="submit" id="/submit-button">Submit</button>
+    <h1>Schedule an Appointment</h1>
     
+    <form id="app-form" action="/submit" method="post">
+        <!-- Contact Info -->
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label for="fname">
+                First Name:
+                <span class="err" id="err-fname">First name is required</span>
+                <input type="text" id="fname" name="fname">
+            </label>
+            <label for="lname">
+                Last Name:
+                <span class="err" id="err-lname">Last name is required</span>
+                <input type="text" id="lname" name="lname">
+            </label>
+        </fieldset>
+        
+        <!-- Appointment Details -->
+        <fieldset>
+            <legend>Appointment Details</legend>
+            <label for="date">
+                Date:
+                <input type="date" id="date" name="date" required>
+            </label>
+            <label for="time">
+                Time:
+                <input type="time" id="time" name="time" required>
+            </label>
+        </fieldset>
+
+        <!-- Submit button -->
+        <button type="submit" id="submit-button">Submit</button>
+    </form>
+
+    <script src="/js/application.js"></script>
 </body>
 </html>

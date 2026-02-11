@@ -1,4 +1,4 @@
-document.getElementById("/submit").onsubmit = () => {
+document.getElementById("app-form").onsubmit = () => {
 
     clearErrors();
 
@@ -11,13 +11,13 @@ document.getElementById("/submit").onsubmit = () => {
         isValid = false;
     }
 
-
     //Validate last name
     let lname = document.getElementById("lname").value.trim();
     if(!lname) {
         document.getElementById("err-lname").style.display = "block";
         isValid = false;
     }
+    
     return isValid;
 }
 
@@ -26,6 +26,4 @@ function clearErrors() {
     for (let i=0; i<errors.length; i++) {
         errors[i].style.display = "none";
     }
-
-    //test
 }
