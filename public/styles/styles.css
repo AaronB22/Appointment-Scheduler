@@ -1,0 +1,14 @@
+.err{
+    color: red;
+    display: none;
+}
+fieldset{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin: 10px;
+}
+input{
+    width: 10%;
+}

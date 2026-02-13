@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Appointment</title>
     <script defer src="./js/application.js"></script>
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>Schedule an Appointment</h1>
@@ -14,15 +15,13 @@
         <fieldset>
             <legend>Contact Info</legend>
             <label for="fname">
-                First Name:
-                <span class="err" id="err-fname">First name is required</span>
-                <input type="text" id="fname" name="fname">
+                First Name: <span class="err" id="err-fname">First name is required</span>
             </label>
+            <input type="text" id="fname" name="fname">
             <label for="lname">
-                Last Name:
-                <span class="err" id="err-lname">Last name is required</span>
-                <input type="text" id="lname" name="lname">
+                Last Name: <span class="err" id="err-lname">Last name is required</span>
             </label>
+            <input type="text" id="lname" name="lname">
         </fieldset>
         
         <!-- Appointment Details -->
